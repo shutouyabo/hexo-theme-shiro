@@ -1,46 +1,23 @@
-# Navigation menu
-menu:
-#  - name: Home
-#    url: /
-#  - name: Archives
-#    url: /archives
-#  - name: Categories
-#    url: /categories
-#  - name: Tags
-#    url: /tags
-#  - name: About
-#    url: /about
-#  - name: GitHub
-#    url: https://github.com
-#    # Open in new tab
-#    target: _blank
+# Hexo 基础配置
+title: My Shiro Blog
+subtitle: ''
+description: ''
+author: Your Name
+language: zh-CN
+timezone: Asia/Shanghai
 
-site:
-  favicon: /favicon.svg
-  # Whether to display the seal (stamp) in the header
-  seal: true
-  rss:
-    enabled: false
-    path: /atom.xml
+# URL配置（替换为你的Vercel域名）
+url: https://your-blog.vercel.app
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
 
-# Analytics
-analytics:
-  # Only support Google Analytics 4
-  google:
-    enabled: false
-    id: ""
+# 主题配置
+theme: shiro # 指定使用shiro主题
 
-# Comment systems
-comments:
-  enabled: false
-  provider: disqus
-  disqus:
-    shortname: ""
-
-# Excerpt settings
-excerpt:
-  # If post has <!-- more -->, use it.
-  # Otherwise fallback to auto-truncated excerpt.
-  fallback:
-    enabled: true
-    length: 200
+# 插件配置
+plugins:
+  - hexo-generator-index
+  - hexo-generator-archive
+  - hexo-generator-category
+  - hexo-generator-tag
