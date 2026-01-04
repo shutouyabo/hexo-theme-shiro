@@ -1,6 +1,0 @@
-{
-  "buildCommand": "npm run build", // 执行我们定义的完整构建脚本
-  "outputDirectory": "public",     // Hexo生成的静态文件目录
-  "installCommand": "npm install",
-  "framework": null
-}
